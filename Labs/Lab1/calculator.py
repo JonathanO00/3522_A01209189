@@ -52,7 +52,10 @@ def Divide(a, b):
     :param b: Input 2
     :return: Quotient of inputs
     """
-    return float(a) / float(b)
+    if float(b) != 0:
+        return float(a) / float(b)
+    else:
+        return "Divide by 0 error! Try again."
 
 
 def main():
@@ -66,19 +69,29 @@ def main():
     print("4 to multiply")
     print("5 to divide")
     choice = input("Choose an operator: ")
-    a = input("enter first number: ")
-    b = input("enter second number: ")
 
     if int(choice) == 1:
+        a = input("enter first number: ")
+        b = input("enter second number: ")
         print(CalculateHypotenuse(a, b))
     elif int(choice) == 2:
+        a = input("enter first number: ")
+        b = input("enter second number: ")
         print(Sum(a, b))
     elif int(choice) == 3:
+        a = input("enter first number: ")
+        b = input("enter second number: ")
         print(Subtract(a, b))
     elif int(choice) == 4:
+        a = input("enter first number: ")
+        b = input("enter second number: ")
         print(Multiply(a, b))
     elif int(choice) == 5:
+        a = input("enter first number: ")
+        b = input("enter second number: ")
         print(Divide(a, b))
+    else:
+        print("Invalid input. Try again!")
 
 
 main()
