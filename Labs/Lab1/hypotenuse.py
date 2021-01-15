@@ -26,4 +26,5 @@ def main():
     print(CalculateHypotenuse(a, b))
 
 
-main()
+if __name__ == "__main__":
+    main()
