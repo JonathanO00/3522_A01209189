@@ -24,7 +24,6 @@ class Controller:
         """
         Waits until a whole second, then simulates moving asteroids.
         :param seconds: an int
-        :return: none
         """
         time_until_second = 1000000 - datetime.datetime.now().microsecond
         time.sleep(time_until_second / 1000000)
@@ -40,6 +39,9 @@ class Controller:
 
 
 def main():
+    """
+    Instantiates a controller and simulates asteroids moving.
+    """
     control1 = Controller()
     control1.simulate(3)
 

@@ -18,7 +18,6 @@ class Vector:
         """
         Adds a vector to the current vector.
         :param vector: a vector
-        :return: none
         """
         self._x += vector.get_x()
         self._y += vector.get_y()
@@ -129,7 +128,6 @@ class Asteroid:
         """
         Setter for circumference.
         :param circumference: a float
-        :return: none
         """
         self._circumference = circumference
 
@@ -144,7 +142,6 @@ class Asteroid:
         """
         Setter for position.
         :param position: a vector
-        :return: none
         """
         self._position = position
 
@@ -159,7 +156,6 @@ class Asteroid:
         """
         Setter for velocity.
         :param velocity: a vector
-        :return: none
         """
         self._velocity = velocity
 
